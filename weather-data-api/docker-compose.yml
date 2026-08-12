@@ -1,0 +1,11 @@
+services:
+  weather-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DB_PATH=/app/data/weather.db
+      - SCRAPE_MODE=snapshot
+      - SCRAPE_INTERVAL_MIN=30
+    volumes:
+      - ./data:/app/data

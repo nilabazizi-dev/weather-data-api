@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+beautifulsoup4
+httpx
+apscheduler
+prometheus-client
+pydantic

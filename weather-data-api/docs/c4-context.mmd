@@ -1,0 +1,9 @@
+flowchart LR
+    user["API Client (Browser / Swagger / Postman)"]
+    api["FastAPI Service (src/app/main.py)"]
+    site["External Weather Website (Maltese Islands Weather)"]
+    db["SQLite Database (data/weather.db)"]
+
+    user -->|HTTP JSON| api
+    api -->|Scrapes HTML| site
+    api -->|Reads/Writes| db

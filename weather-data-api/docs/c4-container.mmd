@@ -1,0 +1,22 @@
+flowchart TB
+    subgraph System["Weather Data API System"]
+        api["FastAPI Application (src/app/main.py)"]
+        routes["src/app/http (API Routers)"]
+        scheduler["src/app/scraping/scheduler.py (APScheduler)"]
+        job["src/app/scraping/job.py (run_scrape)"]
+        parser["src/app/scraping/parser.py"]
+        repository["src/app/storage/sqlite_repository.py"]
+        db["SQLite Database (data/weather.db)"]
+    end
+
+    site["Weather Website (HTML Source)"]
+    fixtures["src/app/scraping/testdata (HTML Fixtures)"]
+
+    api --> routes
+    routes --> repository
+    scheduler --> job
+    job --> parser
+    parser --> repository
+    repository --> db
+    job --> site
+    job --> fixtures

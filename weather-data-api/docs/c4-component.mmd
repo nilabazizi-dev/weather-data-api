@@ -1,0 +1,33 @@
+flowchart TB
+    subgraph App["FastAPI Application (src/app)"]
+        main["main.py"]
+        routes["http/routes.py"]
+        health["http/health.py"]
+        weather["http/weather.py"]
+        job["scraping/job.py"]
+        htmlsource["scraping/html_source.py"]
+        parser["scraping/parser.py"]
+        domain["domain/models.py"]
+        repo["storage/sqlite_repository.py"]
+        metrics["observability/metrics.py"]
+        logging["observability/logging.py"]
+    end
+
+    db["SQLite Database (data/weather.db)"]
+    site["Weather Website"]
+    fixtures["HTML Fixtures"]
+
+    main --> routes
+    routes --> health
+    routes --> weather
+    weather --> repo
+    job --> htmlsource
+    htmlsource --> site
+    htmlsource --> fixtures
+    job --> parser
+    parser --> domain
+    job --> repo
+    repo --> db
+    routes --> logging
+    job --> logging
+    job --> metrics
