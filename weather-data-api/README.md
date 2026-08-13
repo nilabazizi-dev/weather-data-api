@@ -40,7 +40,7 @@ Added ethical scraping controls and cadence configuration
 Integrated the scraping pipeline with the persistence layer
 Participated in ADR and parser design decisions
 
-**👥 Team**
+###**👥 Team**
 -Aria Insaf — Architecture, Domain & Storage
 -Nilab Azizi — Scraping, Parsing & Automation
 -Arezo Behbood — API, Observability & DevOps
