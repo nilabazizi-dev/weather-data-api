@@ -27,11 +27,11 @@ Interactive API documentation is available through FastAPI at:
 http://127.0.0.1:8000/docs
 
 **🛠️ Technologies**
-Python FastAPI SQLite APScheduler Docker Prometheus HTML Parsing Git
+: Python,  FastAPI, SQLite, APScheduler, Docker, Prometheus, HTML, Parsing Git
 
 **👩‍💻 My Contribution — Nilab Azizi**
 
-**Scraping, Parsing & Automation**
+-**Scraping, Parsing & Automation**
 Implemented HTML snapshot and optional HTTP sources
 Developed HTML parsing and data normalization
 Implemented reproducible snapshot-based scraping
@@ -41,8 +41,8 @@ Integrated the scraping pipeline with the persistence layer
 Participated in ADR and parser design decisions
 
 **👥 Team**
-Aria Insaf — Architecture, Domain & Storage
-Nilab Azizi — Scraping, Parsing & Automation
-Arezo Behbood — API, Observability & DevOps
+-Aria Insaf — Architecture, Domain & Storage
+-Nilab Azizi — Scraping, Parsing & Automation
+-Arezo Behbood — API, Observability & DevOps
 
 All team members contributed to architecture, testing, documentation, integration, and final validation.
