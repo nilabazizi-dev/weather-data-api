@@ -161,7 +161,8 @@ When there is no upstream HTML source that offers some of these forecast attribu
 
 16.	Team Contributions 
 This project was developed as a collaborative group effort by a team of three members. The workload was divided equally across architecture design, backend implementation, data scraping, persistence, API development, DevOps, and documentation. All members contributed to design discussions, testing, and final integration. Each member was responsible for a distinct part of the system while maintaining continuous collaboration and joint validation of the full solution.
-Team Member Responsibilities
+Team Member Responsibilities:
+
 Member 1 (Aria Insaf): Architecture, Domain & Storage Layer
 Responsible for the core system design and data persistence layer.
 Contributions:
@@ -171,6 +172,7 @@ Contributions:
 •	Implemented the repository abstraction and deduplication logic
 •	Implemented snapshot metadata and hashing strategy
 •	Participated in ADR writing and architectural validation
+
 Member 2 (Nilab Azizi): Scraping, Parsing & Automation
 Responsible for data acquisition and normalization.
 Contributions:
@@ -181,6 +183,7 @@ Contributions:
 •	Implemented ethical scraping controls and cadence configuration
 •	Integrated scraping pipeline with persistence layer
 •	Participated in ADR writing and parser design decisions
+
 Member 3 (Arezo Behbood): API, Observability & DevOps
 Responsible for the API interface, deployment, and system observability.
 Contributions:
@@ -192,6 +195,7 @@ Contributions:
 •	Designed and implemented Dockerfile and docker-compose
 •	Implemented health checks and container configuration
 •	Participated in ADR writing and deployment strategy
+
 Joint Responsibilities
 All team members jointly contributed to:
 •	Architectural design and decision-making
@@ -202,24 +206,4 @@ All team members jointly contributed to:
 •	README documentation and demo preparation
 The project was reviewed collectively to ensure architectural consistency, correctness, and full alignment with the assessment requirements.
 
-17.	Demo Expectations
-A short demo (3–5 minutes) should show:
-1.	Docker startup,
-2.	Successful health check,
-3.	Scrape execution (scheduler or admin trigger),
-4.	API responses for current and forecast data,
-5.	OpenAPI documentation,
-6.	Metrics endpoint,
-7.	Brief reference to ADRs and diagrams.
-
-18.	Completion Status
-All required components for a high-mark submission are implemented:
-•	Clean architecture and separation,
-•	Reproducible scraping,
-•	Deduplicated persistence,
-•	Versioned API with RFC 7807 errors,
-•	ADR documentation,
-•	Architecture diagrams,
-•	Dockerized deployment,
-•	Observability features.
 
